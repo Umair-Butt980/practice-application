@@ -1,7 +1,13 @@
 import React from "react";
 
 function ExpenseItem() {
-  return <h1> Hello this is expense conponent</h1>;
+  return (
+    <div>
+      <div> Date </div>
+      <div> Title </div>
+      <div> Amount </div>
+    </div>
+  );
 }
 
 export default ExpenseItem;
