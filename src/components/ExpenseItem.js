@@ -3,13 +3,16 @@ import React from "react";
 import "./ExpenseItem.css";
 
 function ExpenseItem() {
+  const expenseDate = new Date();
+  let title = "Car Insurance";
+  let price = 101.23;
   return (
     <div className="expense-item">
-      <div> October 27th 2022 </div>
+      <div> {expenseDate.toISOString()} </div>
       <div className="expense-item__description">
-        <h2> Insurance </h2>
+        <h2> {title} </h2>
       </div>
-      <div className="expense-item__price">$202.12</div>
+      <div className="expense-item__price">${price}</div>
     </div>
   );
 }
