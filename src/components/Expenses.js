@@ -6,7 +6,7 @@ function Expenses(props) {
   return (
     <Card className="expenses">
       <header>
-        <h2> THis is the EXPENSES APPLICATION </h2>
+        <h2> .........THis is the EXPENSES APPLICATION........... </h2>
       </header>
       <ExpenseItem
         title={props.items[0].title}
