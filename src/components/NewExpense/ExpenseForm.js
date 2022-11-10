@@ -1,8 +1,7 @@
 import React from "react";
 
-import "./NewExpenseForm.css";
-
-const NewExpenseForm = () => {
+import "./ExpenseForm.css";
+const ExpenseForm = () => {
   return (
     <form>
       <div className="new-expense__controls">
@@ -26,4 +25,4 @@ const NewExpenseForm = () => {
   );
 };
 
-export default NewExpenseForm;
+export default ExpenseForm;
