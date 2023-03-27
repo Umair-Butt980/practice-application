@@ -26,10 +26,13 @@ function App() {
     },
   ];
 
+  const onAddExpenseHandler = (expense) =>{
+    console.log(expense, "in the app js file")
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <NewExpense />
+        <NewExpense onAddExpense={onAddExpenseHandler} />
         <Expenses items={expenses} />
       </header>
     </div>
