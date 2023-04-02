@@ -33,7 +33,6 @@ function App() {
     setExpenses((prevExpenses)=>{
        return [expense , ...prevExpenses]
     })
-    console.log(expenses, expense , "<+++++?");
   }
   return (
     <div className="App">
