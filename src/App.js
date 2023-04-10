@@ -31,6 +31,7 @@ function App() {
 
   const onAddExpenseHandler = (expense) =>{
     setExpenses((prevExpenses)=>{
+      console.log(prevExpenses , "<====This is prev expenses=====>")
        return [expense , ...prevExpenses]
     })
   }
