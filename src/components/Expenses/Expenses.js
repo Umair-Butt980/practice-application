@@ -7,15 +7,17 @@ import ExpensesFilter from "./ExpensesFilter";
 
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
-  let filterdInfo = '2019, 2020 and 2021'
-  if (setFilteredYear === "2020") {
-    filterdInfo = "2019, 2021 and 2022";
-  } else if (setFilteredYear === "2021") {
-    filterdInfo = "2020, 2019 and 2022";
-  } else if (setFilteredYear === "2022") {
-    filterdInfo = "2020, 2021 and 2023";
-  }
+  //derived state concept
+  // let filterdInfo = '2019, 2020 and 2021'
+  // if (setFilteredYear === "2020") {
+  //   filterdInfo = "2019, 2021 and 2022";
+  // } else if (setFilteredYear === "2021") {
+  //   filterdInfo = "2020, 2019 and 2022";
+  // } else if (setFilteredYear === "2022") {
+  //   filterdInfo = "2020, 2021 and 2023";
+  // }
    const filterChangeHandler = (selectedYear) => {
+    console.log('im called from the child component')
      setFilteredYear(selectedYear);
    };
    
@@ -29,7 +31,8 @@ const Expenses = (props) => {
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
-        />
+      />
+      {/* <span> Data for the years {JSON.stringify(filterdInfo)} </span> */}
       {filteredExpenses.map((expense) => (
         <ExpenseItem
           key={expense.id}
