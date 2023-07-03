@@ -2,6 +2,7 @@ import React from "react";
 import ChartBar from "./Chartbar";
 import './Chart.css'
 
+//chart component
 const Chart = props =>{
     return (
       <div className="chart">
