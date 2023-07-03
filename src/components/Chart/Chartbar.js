@@ -2,6 +2,7 @@ import React from "react";
 
 import './ChartBar.css'
 
+//single ChartBar component
 const ChartBar = (props) =>{
     let barFilled = '0%'
     if(barFilled > 0) {
